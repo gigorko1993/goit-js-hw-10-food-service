@@ -34,5 +34,6 @@ function onThemeChange(evt) {
     else {
         localStorage.setItem('theme', Theme.LIGHT);
         body.classList.remove(Theme.DARK);
+        body.classList.add(localStorage.getItem('theme'));
     }
 }
